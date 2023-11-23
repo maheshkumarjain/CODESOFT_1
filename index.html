@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my profilo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57f0f4a746.js" crossorigin="anonymous"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@200;300;400&family=Source+Code+Pro:wght@300&display=swap');
+*{
+margin:0px;
+padding: 0%;
+}
+.sidebar{
+    background-color: rgb(11, 10, 10);
+    /*width: 430px;*/
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+    
+}
+.sidebar nav{
+    padding:35px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+    color: aliceblue;
+}
+.sidebar nav li b{
+    text-decoration: none;
+    color: yellowgreen;
+    cursor: pointer;
+}
+sidebar nav li b:hover{
+    color: red;
+}
+.main{
+    background-color: rgb(180, 180, 167);
+    width:89vw;
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    background-color:rgb(0, 251, 255);
+    height:75vh;
+    width:80vw;
+    margin: 144px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.infor{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 55px;
+    font-family: 'Source Code Pro', monospace;
+}
+.name{
+    font-size:45px ;
+    font-family:'Roboto Slab', serif;
+}
+.about{
+    font-size: 35px;
+}
+.buttons button{ margin:10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color:antiquewhite;
+    color: orangered;
+}
+.devpic img{
+    height:75vh;
+}
+    /* 
+.contactform{
+    font-family: 'Source Code Pro', monospace;
+    
+    width:80vw;
+}
+.contactform h1{
+    font-family:'Roboto Slab', serif;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.contactform p{
+    padding-top: 20px;
+    padding-left: 50px;
+   
+}
+.contactpic img{
+    width:25vw;
+   margin:100%
+} */
+/* .contcontainer{
+    display: flex;
+} */
+.contcontainer{
+    background-color:rgb(0, 251, 255);
+    height:75vh;
+    width:80vw;
+    margin: 30px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.h1{
+    margin: 10px 20px;
+}
+.continfor{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 35px;
+    font-family: 'Source Code Pro', monospace;
+}
+.contname{
+    font-size:15px ;
+    font-family:'Roboto Slab', serif;
+}
+.about{
+    font-size: 15px;
+}
+.ee{
+    font-size: 15px;
+    font-family:'Roboto Slab', serif;
+}
+
+/* .email{
+   color:rgb(255, 128, 0);
+   font-size: 15px;
+} */
+.devpic img{
+    height:400px;
+    padding: 48px;
+}
+.blogitems{
+  margin:25px;
+  font-family: 'Source Code Pro', monospace;
+}
+.blogcontainer  h1{
+    font-family:'Roboto Slab', serif;
+    margin: 28px;
+    
+}
+.blogitems p{
+    font-family: 'Source Code Pro', monospace;
+   
+}
+.blogitems button{ margin:10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.blogitems button:hover{
+    background-color:antiquewhite;
+    color: orangered;
+}
+.info h2{
+    margin:10px 20px;
+    font-family:'Roboto Slab', serif;
+}
+.info p{
+    margin:15px;
+    font-family: 'Source Code Pro', monospace;
+}
+.skill{
+    margin: 0 10px;
+    width:22px;
+    height:10px;
+    background-color: #57a042;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    margin:10px;
+}
+.ninty{
+    width: 230px;
+}
+.s5{
+    width: 190px;
+}
+.fifty{
+    width: 125px;
+}
+.t5{
+    width: 65px;
+}
+.skills{
+    margin:10px 20px;
+}
+.info table{
+    margin:10px 20px;
+}
+.info table td{
+    text-align: center;
+    /* padding: 5px; */
+    background-color: #57a042;
+    color: black;
+    
+}
+.info table tr{
+    background-color: aliceblue;
+}
+.proc{
+    background-color: #57a042;
+    color:black;
+    width:fit-content;
+    border-radius: 5px;
+    margin:10px 20px;
+}
+.proc ul{
+    list-style: none;
+}
+.proc li{
+    padding:10px;
+}
+.infoservice{
+    margin: 10px 150px;
+}
+.infoservice  h1{
+    align-items: center;
+    margin: 30px;
+    justify-content: center;
+}
+.infoservice th{
+    padding: 10px 10px;
+}
+.infoservice td{
+    text-align: center;
+    padding: 10px 10px;
+}
+</style>
+<body>
+<div class="container">
+
+    <div class="sidebar">
+      
+        <nav>
+            <UL>
+                <li><b>home</b></li>
+                <li>Intro</a></li>
+                <li>Experience</a></li>
+                <li>Blog</a></li>
+                <li>contact me</a></li>
+            </UL>
+        </nav>
+    </div>
+    <div class="main">
+        
+       <div class="infocontainer">
+        <div class="infor">Hi i am
+        <div class="name">Maheshkumar jain</div>
+        <div class="about">Developer ,student</div>
+        <div class="buttons">
+            <a href="/cv.txt"> <button>download cv</button></a>
+            <a href="/contact.html"> <button>contact me</button></a>
+        </div>
+        </div>
+        <div class="devpic"><img src="mahesh.jpg" alt="developer"></div>
+       </div>
+
+    </div>
+</div>
+
+
+
+<div class="container">
+
+     <div class="sidebar">
+      
+        <nav>
+            <UL>
+                <li>home</li>
+                <li><b>Intro</b></li>
+                <li>Experience</li>
+                <li>Blog</li>
+                <li>contact me</li>
+            </UL>
+        </nav>
+    </div>
+    <div class="main">
+        
+       <div class="info">
+        <h2>About Me</h2>
+        <p>I am a dedicated and hardworking 2nd year computer science student at Acharya Institute Of Technology ,Bangalore</p>
+        <p>With Knowlege in programming launguage including C,C++,HTML,JAVA,PYTHON,CSS,I am committed to complete all the given tasks and constantly seeking opportunities to enchance my Skills and learn new technologies</p>
+        <h2>Basic Details</h2>
+        <table border="2" cellpadding="5px" cellspacing="10">
+            <tr>
+                <td>Name</td>
+                <td>Maheshkumar Jain</td>
+            </tr>
+            <tr>
+                <td>ph.no</td>
+                <td>6366136697</td>
+            </tr>
+            <tr>
+                <td>Email-Id</td>
+                <td>jainmahesh883@gmail.com</td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td>8 March 2003</td>
+            </tr>
+        </table>
+        
+        <h2>Skills</h2>
+       
+        <div class="skills">
+            <div class="skillitem"> HTML:    <div class="skill ninty"></div></div>
+            <div class="skillitem"> CSS:    <div class="skill s5"></div></div>
+            <div class="skillitem"> JAVASCRIPT:    <div class="skill t5"></div></div>
+            <div class="skillitem"> JAVA:    <div class="skill fifty"></div></div>
+            <div class="skillitem"> PHYTHON:    <div class="skill s5"></div></div>
+            
+    
+        </div>
+        <div class="pro"><h2>projects</h2></div>
+       <div class="proc"> <ul>
+            <li>To-Do List</li>
+            <li>Grocery web-page</li>
+            <li>calculator</li>
+            <li>temperature convertor</li>
+            <li>landing page</li>
+            <li>Currency Convertor</li>
+            <li>online shopping web site(in progess)</li>
+        </ul>
+        </div>
+        
+        
+        </div>
+        
+       
+
+    </div>
+</div>
+<div class="container">
+
+    <div class="sidebar">
+      
+        <nav>
+            <UL>
+                <li>home</a></li>
+                <li>Intro</a></li>
+                <li><b>Experience</b></li>
+                <li>Blog</a></li>
+                <li>contact me</a></li>
+            </UL>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="infoservice">
+        <h1>Professional Experience</h1>
+        <table border="3">
+            <tr>
+            <th>logo</th>
+            <th>Source</th>
+            <th>topic</th>
+            <th>type</th>
+            <th>certificates</th>
+            </tr>
+            <tr>
+                <td class="sp"><img src="splo.webp" alt="Springboard" height="100px"></td>
+                <td>Infosys </br>Springboard</td>
+                <td>data <br>structure </td>
+                <td>internship</td>
+                <td> <div class="buttons">
+                    <a href="/cert.pdf"> <button>certificate</button></a>
+                  </div>
+                </div></td>
+            </tr>
+            <tr>
+                <td class="sp"><img src="/ar.jpeg" alt="Springboard" height="100px"></td>
+                <td>Infosys </br>Springboard</td>
+                <td>student<br>application form </td>
+                <td>internship</td>
+                <td> <div class="buttons">
+                    <a href="/st.pdf"> <button>webpage</button></a>
+                  </div>
+                </div></td>
+            </tr>
+            <tr>
+                <td class="sp"><img src="splo.webp" alt="Springboard" height="100px"></td>
+                <td>Infosys </br>Springboard</td>
+                <td>cyber<br> serurity </td>
+                <td>internship</td>
+                <td> <div class="buttons">
+                    <a href="/certf.pdf"> <button>certificate</button></a>
+                  </div>
+                </div></td>
+            </tr>
+            <tr>
+                <td class="sp"><img src="splo.webp" alt="Springboard" height="100px"></td>
+                <td>Infosys </br>Springboard</td>
+                <td>data <br>structure using <br>java </td>
+                <td>internship</td>
+                <td> <div class="buttons">
+                    <a href="/cert.pdf"> <button>certificate</button></a>
+                  </div>
+                </div></td>
+            </tr>
+        </table>
+       
+
+    </div>
+</div>
+</div>
+<div class="container">
+
+    <div class="sidebar">
+      
+        <nav>
+            <UL>
+                <li>home</a></li>
+                <li>Intro</a></li>
+                <li>Experience</a></li>
+                <li><b>Blog</b></li>
+                <li>contact me</a></li>
+            </UL>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="blogcontainer">
+        <h1>MAHESH BLOGS-DAILY LOADS</h1>
+       </div>
+       <div class="blogitems">
+        <h2> Wired</h2>
+        <p>Wired is a massively popular publication, good at capturing real insights into the tech world, no stranger to topics like technology, entertainment, science, culture, politics, and social media. Informed and comprehensive, Wired is basically the perfect tech blog to follow.Bit.ai Home Page CTA
+            This unique blog is dedicated to modern life and the technology industry and answers every question related to tech trends, gadget reviews, and the latest updates.
+            Wired is ranked as one of the best tech blogs for professionals in every industry and delivers great ideas for presenting the most relevant topics to your audience</p>
+        <button>Read More</button>
+       </div>
+       <div class="blogitems">
+        <h2>TechCrunch</h2>
+       <p>Invest yourself in the business verse of the tech world with one of the most popular technology blogs thriving this year- TechCrunch.
+
+        The blog publishes content on businesses related to tech, analysis of emerging trends in tech, technology news, and listings of new tech products in the market. It is one of the first publications to report broadly on tech startups and funding rounds.
+        
+        TechCrunch offers knowledge about new gizmos and business-related apps. It is like a reservoir of information on Internet companies & startups around the world.</p>
+        <button>Read More</button>
+       </div>
+       <div class="blogitems">
+        <h2>Mashable</h2>
+       <p>Mashable is a world-renowned, entertainment, and multi-platform media channel.
+
+        Powered by its own proprietary technology, this tech blog is the go-to source for tech, digital culture, and entertainment content for its influential and dedicated global audience!
+        
+        It is one of the most influential blogs on technology on the internet today!
+        
+        Mashable provides information to those who wish to catch up on all most everything happening around the tech world including movies, travel, finance, and, of course, gadgets.
+        
+         </p>
+        <button>Read More</button>
+       </div>
+      
+
+    </div>
+</div>
+<div class="container">
+
+    <div class="sidebar">
+      
+        <nav>
+            <UL>
+                <li>home</a></li>
+                <li>Intro</a></li>
+                <li>Experience</a></li>
+                <li>Blog</a></li>
+                <li><b>contact me</b></li>
+            </UL>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="h1"> <h1>Contact Me</h1></div>
+            <div class="contcontainer">
+             <div class="continfor">Reach Out To Me!
+             <div class="contname">DISCUSS A PROJECT OR JUST WANT TO SAY HI IN MY INBOX FOR ALL</div>
+             <div class="about">web Developer from India |Speaker|CS STUDENT </div>
+             <div class="ee">Email=jainmahesh883@gmail.com</div>
+             <div class="ee">Ph-No:6366136697</div>
+             <div class="icon"><i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-facebook"></i></div>
+             
+             </div>
+             <div class="devpic"><img src="mahesh.jpg" alt="developer"></div>
+            </div>
+     
+         </div>
+     </div>
+      
+
+    </div>
+</div>
+</body>
+</html>
